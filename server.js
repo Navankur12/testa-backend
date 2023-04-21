@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors")
 const session = require("express-session")
 var bodyParser = require("body-parser");
-const connectDB = require("./config/db");
+//const connectDB = require("./config/db");
 const { SESSION_SECRET } = require("./config/keys")
 const appTour = require("./routes/app-tour")
 const authRoutes = require("./routes/auth-route")
@@ -54,7 +54,7 @@ app.use(
 
 const port = process.env.PORT || 5000;
 // Connecting to the db
-connectDB()
+//connectDB()
 
 // 
 app.use(session({
