@@ -1,0 +1,15 @@
+module.exports = {
+    MONGOURI: process.env.MONGOURI,
+    GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID,
+    GOOGLE_CLIENT_SECRET: process.env.GOOGLE_CLIENT_SECRET,
+    SESSION_SECRET: process.env.SESSION_SECRET,
+    JWT_SECRET: process.env.JWT_SECRET,
+    GOOGLE_MAIL_ID: process.env.GOOGLE_MAIL_ID,
+    GOOGLE_MAIL_PASSWORD: process.env.GOOGLE_MAIL_PASSWORD,
+    EMAIL_SERVICE: process.env.EMAIL_SERVICE,
+    EMAIL_USERNAME: process.env.EMAIL_USERNAME,
+    EMAIL_PASSWORD: process.env.EMAIL_PASSWORD,
+    EMAIL_FROM_ADDRESS: process.env.EMAIL_FROM_ADDRESS,
+    CLIENT_URL: process.env.CLIENT_URL,
+    PORT:process.env.PORT,
+};
