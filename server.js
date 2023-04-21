@@ -3,7 +3,7 @@ const cors = require("cors")
 const session = require("express-session")
 var bodyParser = require("body-parser");
 //const connectDB = require("./config/db");
-const { SESSION_SECRET } = require("./config/keys")
+//const { SESSION_SECRET } = require("./config/keys")
 const appTour = require("./routes/app-tour")
 const authRoutes = require("./routes/auth-route")
 const countryRoute = require("./routes/country-city-routes");
@@ -57,12 +57,12 @@ const port = process.env.PORT || 5000;
 //connectDB()
 
 // 
-app.use(session({
-  secret: SESSION_SECRET,
-  resave: false,
-  saveUninitialized: true
+// app.use(session({
+//   secret: SESSION_SECRET,
+//   resave: false,
+//   saveUninitialized: true
 
-}))
+// }))
 
 app.get("/", (req, res) => res.send(`<h1>Server started</h1>`));
 app.use("/api", authRoutes);
